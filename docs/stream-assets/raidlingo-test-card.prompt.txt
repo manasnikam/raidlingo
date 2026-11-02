@@ -1,0 +1,14 @@
+Use case: ads-marketing.
+Asset type: a finished flat full-screen Twitch broadcast test card, ready to load directly into OBS as an Image source.
+Create one landscape image, exactly 1920 x 1080 pixels, 16:9 aspect ratio. Opaque background.
+Brand and palette from the Raidlingo app: warm ivory #eeeae0, deep forest charcoal #282e29, muted sage #c7c9bb, restrained burnt-orange #ac3d1b.
+Design: polished modern editorial broadcast graphic with very large, impeccably legible typography and a playful abstract illustration of two interlocking speech bubbles joined by fine signal lines. Use subtle paper grain, solid graphic shapes, and generous negative space. Clean, distinctive, welcoming; no photographs, no gradients, no fake software UI.
+Composition: a small lowercase brand wordmark near the upper left; the main title occupies the left-center; a short invitation below it. Decorative speech-bubble artwork in the upper middle/right. Keep the lower-right quarter mostly quiet solid ivory so a live Raidlingo chat overlay can sit above it later. Keep all type comfortably within 80 pixel safe margins.
+Text, exactly:
+"raidlingo."
+"STREAM TEST"
+"Two channels. One conversation."
+"Say hello in chat."
+"English · Español · हिन्दी"
+Make STREAM TEST the dominant element in deep forest charcoal, with a small burnt-orange accent near it. Typeset Hindi correctly. All text must be sharp and readable at broadcast size.
+No additional text, no watermarks, no Twitch logo, no live-status claims, no timestamps, no mockup frame. Output the finished graphic itself.

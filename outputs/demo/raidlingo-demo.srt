@@ -1,0 +1,113 @@
+1
+00:00:00,000 --> 00:00:03,408
+Raidlingo connects two Twitch communities across a language barrier.
+
+2
+00:00:03,408 --> 00:00:05,681
+This is the live connection desk.
+
+3
+00:00:05,681 --> 00:00:11,361
+Seat A is connected to the English channel, and seat B to the Spanish
+channel.
+
+4
+00:00:11,361 --> 00:00:15,905
+A separate bot account is authorized to post translations in both chats.
+
+5
+00:00:15,905 --> 00:00:22,722
+The backend is written in Go, the interface in Preact, and this demo
+uses Codex CLI for translation.
+
+6
+00:00:30,000 --> 00:00:33,964
+These are the actual Twitch chats, shown side by side.
+
+7
+00:00:33,964 --> 00:00:39,117
+First, an English message goes into channel A: Welcome to our bilingual
+stream.
+
+8
+00:00:39,117 --> 00:00:45,063
+Raidlingo receives the chat event, detects its language, and translates
+it for the other channel.
+
+9
+00:00:45,063 --> 00:00:51,802
+The bot reply appears in channel B in Spanish, keeping the original
+sender attached to the message.
+
+10
+00:00:51,802 --> 00:00:56,162
+Viewers can stay in their own channel and follow the conversation.
+
+11
+00:01:05,000 --> 00:01:09,013
+The reverse direction was verified in an earlier live test.
+
+12
+00:01:09,013 --> 00:01:14,231
+Here is that Spanish message in the live desk: Estoy listo para jugar.
+
+13
+00:01:14,231 --> 00:01:17,442
+Its English translation is, I'm ready to play.
+
+14
+00:01:17,442 --> 00:01:22,258
+The original stays visible, and the relay status records a successful
+delivery.
+
+15
+00:01:22,258 --> 00:01:25,870
+The bot posted that English reply in channel A.
+
+16
+00:01:25,870 --> 00:01:32,693
+Raidlingo also ignores the relay bot's own messages, preventing
+translated replies from bouncing between the two chats.
+
+17
+00:01:40,000 --> 00:01:44,555
+The same live conversation is available as an OBS browser overlay.
+
+18
+00:01:44,555 --> 00:01:47,453
+Here, the selected display language is English.
+
+19
+00:01:47,453 --> 00:01:51,593
+Spanish messages appear in English with their original text underneath.
+
+20
+00:01:51,593 --> 00:01:56,148
+Sender names and channel labels preserve the context of each line.
+
+21
+00:01:56,148 --> 00:02:03,187
+The background is transparent, so streamers can place this panel over
+their game, camera, or stream graphics.
+
+22
+00:02:03,187 --> 00:02:06,085
+It updates as new chat events arrive.
+
+23
+00:02:13,000 --> 00:02:18,779
+Back in the desk, the relay status shows successful deliveries and any
+posting errors.
+
+24
+00:02:18,779 --> 00:02:22,907
+This demo covers live text translation and the OBS overlay.
+
+25
+00:02:22,907 --> 00:02:26,210
+Voice dubbing is planned for the next phase.
+
+26
+00:02:26,210 --> 00:02:31,989
+Raidlingo brings two channels into one conversation, while each
+community keeps its own language.

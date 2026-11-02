@@ -1,0 +1,32 @@
+{
+  "name": "raidlingo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/seat",
+    "apps/overlay"
+  ],
+  "engines": {
+    "node": ">=22.16"
+  },
+  "scripts": {
+    "dev": "npm run build:server && node scripts/dev.mjs",
+    "build:web": "npm run build --workspaces",
+    "build:server": "node scripts/go.mjs build -o bin/raidlingo ./cmd/raidlingo",
+    "build": "npm run build:web && npm run build:server",
+    "typecheck": "npm run typecheck --workspaces && node scripts/go.mjs vet ./...",
+    "test": "node scripts/go.mjs test -race ./...",
+    "check:live": "npm run build:server && bin/raidlingo --check-live",
+    "start": "node scripts/start.mjs",
+    "start:lan": "npm run build && node scripts/start.mjs --lan-ip",
+    "demo:phase1": "npm run demo:phase2",
+    "demo:phase2": "npm run build && node scripts/start.mjs --demo"
+  },
+  "dependencies": {
+    "preact": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}

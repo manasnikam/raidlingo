@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.data/
+coverage/
+*.log
+.DS_Store
+
+bin/
+.cache/
+
+# Local browser captures and video production workspace
+.playwright-mcp/
+video/
+outputs/demo/raw/
+outputs/demo/assets/
+outputs/demo/obs-entry.html
+__pycache__/
+.venv*/

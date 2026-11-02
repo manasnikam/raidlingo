@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "name": "@raidlingo/overlay",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "preact": "^11.1.1"
+  }
+}
